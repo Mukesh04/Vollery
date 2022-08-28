@@ -1,0 +1,232 @@
+@import './_variables.scss';
+.form-row {
+  .col-xl,
+  .col-xl-auto,
+  .col-xl-12,
+  .col-xl-11,
+  .col-xl-10,
+  .col-xl-9,
+  .col-xl-8,
+  .col-xl-7,
+  .col-xl-6,
+  .col-xl-5,
+  .col-xl-4,
+  .col-xl-3,
+  .col-xl-2,
+  .col-xl-1,
+  .col-lg,
+  .col-lg-auto,
+  .col-lg-12,
+  .col-lg-11,
+  .col-lg-10,
+  .col-lg-9,
+  .col-lg-8,
+  .col-lg-7,
+  .col-lg-6,
+  .col-lg-5,
+  .col-lg-4,
+  .col-lg-3,
+  .col-lg-2,
+  .col-lg-1,
+  .col-md,
+  .col-md-auto,
+  .col-md-12,
+  .col-md-11,
+  .col-md-10,
+  .col-md-9,
+  .col-md-8,
+  .col-md-7,
+  .col-md-6,
+  .col-md-5,
+  .col-md-4,
+  .col-md-3,
+  .col-md-2,
+  .col-md-1,
+  .col-sm,
+  .col-sm-auto,
+  .col-sm-12,
+  .col-sm-11,
+  .col-sm-10,
+  .col-sm-9,
+  .col-sm-8,
+  .col-sm-7,
+  .col-sm-6,
+  .col-sm-5,
+  .col-sm-4,
+  .col-sm-3,
+  .col-sm-2,
+  .col-sm-1,
+  .col,
+  .col-auto,
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-8,
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4,
+  .col-3,
+  .col-2,
+  .col-1 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.form-control {
+  font-size: 12px !important;
+  line-height: 1.2;
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 0.6em;
+}
+
+.input-group-text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.input-group>.form-control:not(:first-child),
+.input-group>.custom-select:not(:first-child) {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.form-submitted,
+.instalment-submitted {
+  .ng-invalid {
+    border-color: $error-color !important;
+    input {
+      border-color: $error-color !important;
+    }
+    &+label {
+      color: $error-color;
+    }
+    .mydp {
+      border-color: $error-color !important;
+    }
+  }
+  .ng-select {
+    &.ng-invalid {
+      .ng-control {
+        border-color: $error-color !important;
+      }
+      .ng-select-container {
+        border-color: $error-color !important;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: $primary-btn !important;
+  border-color: $primary-btn !important;
+  &:hover {
+    color: #fff !important;
+    background-color: $primary-btn;
+    border-color: $primary-btn;
+    opacity: 0.9;
+  }
+}
+
+.btn-secondary {
+  color: #000 !important;
+  background-color: $secondary-btn;
+  border-color: $secondary-btn;
+  &:hover {
+    color: #000 !important;
+    background-color: $secondary-btn;
+    border-color: $secondary-btn;
+    opacity: 0.9;
+  }
+}
+
+.btn-success {
+  color: #fff !important;
+  background-color: $success-btn;
+  border-color: $success-btn;
+  &:hover {
+    color: #fff !important;
+    background-color: $success-btn;
+    border-color: $success-btn;
+    opacity: 0.9;
+  }
+}
+
+.btn-error {
+  color: #fff !important;
+  background-color: $error-btn;
+  border-color: $error-btn;
+  &:hover {
+    color: #fff !important;
+    background-color: $error-btn;
+    border-color: $error-btn;
+    opacity: 0.9;
+  }
+}
+
+.btn-warning {
+  color: #fff !important;
+  background-color: $warning-btn;
+  border-color: $warning-btn;
+  &:hover {
+    color: #fff !important;
+    background-color: $warning-btn;
+    border-color: $warning-btn;
+    opacity: 0.9;
+  }
+}
+
+.modal-header {
+  padding: 10px 22px;
+  background: #8fd19e;
+}
+
+.modal-title {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+fieldset {
+  border-style: none;
+  border-width: 0;
+  line-height: 20px;
+  margin-bottom: 0;
+  width: auto;
+  padding: 10px 0;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  border-radius: 5px;
+  legend {
+    position: absolute;
+    top: -11px;
+    z-index: 9;
+    font-size: 14px !important;
+    width: auto;
+    display: inline-block;
+    background: #fff;
+    padding: 0 2px;
+  }
+}
+
+.navbar {
+  padding: 0 !important;
+  .nav-link {
+    padding: 0.3rem 0.5rem;
+  }
+}

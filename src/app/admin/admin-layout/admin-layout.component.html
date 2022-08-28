@@ -1,0 +1,90 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" routerLink="/home">
+                <img src="../../../assets/images/logo.svg" alt="logo" class="logoWrap">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navigation_wrapper navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/team">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+                            <button type="button" class="btn dropdownBtn" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">System Pages</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                              <button ngbDropdownItem routerLink="/home">Home</button>
+                              <button ngbDropdownItem routerLink="/team">Pages</button>
+                              <button ngbDropdownItem routerLink="/blog">Blog</button>
+                              <button ngbDropdownItem routerLink="/features">Features</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="checkItNow">
+                    <button class="btn searchBtn" type="submit">Check It Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="routerContent">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+<footer class="pt-4">
+    <div class="d-flex justify-content-around fBox">
+        <div>
+            <img src="../../../assets/images/logo.svg" alt="logo" class="logoWrap mb-4">
+            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                 aenean commodo ligula eget dolor aenean massa</p>
+            <ul class="d-flex socialMediaLinks">
+                <li><fa-icon [icon]="fa.user" class="fa-1x"></fa-icon></li>
+                <li><fa-icon [icon]="fa.user" class="fa-1x"></fa-icon></li>
+                <li><fa-icon [icon]="fa.user" class="fa-1x"></fa-icon></li>
+            </ul>     
+            
+        </div>
+        <div>
+            <h4>Site Links</h4>
+            <ul class="footerLinks">
+                <li><a href="#">Support us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Customer Support</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Useful Links</h4>
+            <ul class="footerLinks">
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Our journal</a></li>
+                <li><a href="#">Our offices</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Work with us</h4>
+            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                 aenean commodo ligula eget dolor aenean massa</p>
+            <button class="btn contactBtn">Contact Us Now</button>
+        </div>
+    </div>
+</footer>

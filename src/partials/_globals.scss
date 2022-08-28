@@ -1,0 +1,81 @@
+.flx-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flx-row-na {
+  display: flex;
+  flex-direction: row;
+}
+
+.flx-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flx-ac {
+  align-items: center;
+}
+
+.flx-ae {
+  align-items: flex-end;
+}
+
+.flx-jce {
+  justify-content: flex-end;
+}
+
+.flx-jc {
+  justify-content: center;
+}
+
+.flx-jsb {
+  justify-content: space-between;
+}
+
+.flx-jsa {
+  justify-content: space-around;
+}
+
+.flx-wrap {
+  flex-wrap: wrap;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f10 {
+  font-size: 10px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.form-disable {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.colorWhite {
+  color: #ffffff;
+}

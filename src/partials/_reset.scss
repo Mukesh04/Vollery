@@ -1,0 +1,69 @@
+label {
+  margin-bottom: 0px;
+  color: #707070;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.fa-2x {
+  font-size: 1.4em;
+}
+
+ng-select .ng-value-container .ng-value {
+  padding: 4px 0;
+}
+
+.ng-select.ng-select-single .ng-select-container {
+  height: 30px;
+}
+
+.ng-select .ng-select-container {
+  min-height: 30px;
+  font-size: 12px;
+}
+
+.ng-select.ng-select-disabled>.ng-select-container {
+  background: #e9ecef;
+  opacity: 0.9;
+}
+
+table tr td,
+table tr th {
+  font-size: 12px !important;
+  margin: 0;
+  padding: 3px!important;
+  border: 1px solid #e9ebec;
+  font-weight: 400 !important;
+  vertical-align: middle !important;
+  a {
+    color: #000 !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
